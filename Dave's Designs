@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Designer Portfolio - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .slide-up {
+            animation: slideUp 1.5s ease-in-out;
+        }
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .hover-zoom:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a class="text-2xl font-bold" href="index.html">My Portfolio</a>
+            <ul class="flex space-x-4">
+                <li><a class="hover:text-gray-600" href="index.html">Home</a></li>
+                <li><a class="hover:text-gray-600" href="about.html">About</a></li>
+                <li><a class="hover:text-gray-600" href="portfolio.html">Portfolio</a></li>
+                <li><a class="hover:text-gray-600" href="services.html">Services</a></li>
+                <li><a class="hover:text-gray-600" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600">
+        <img alt="A creative workspace with design tools" class="absolute inset-0 w-full h-full object-cover opacity-30" height="1080" src="https://storage.googleapis.com/a1aa/image/BjD56s9J1eXpJ6T9HUhaUPh2M0yYKHWrdXSsKige9dCa6tfnA.jpg" width="1920"/>
+        <div class="relative z-10 text-center fade-in">
+            <h1 class="text-5xl font-bold mb-4 text-white">Hello, I'm [Your Name]</h1>
+            <p class="text-xl mb-8 text-white">Crafting stunning visuals and exceptional user experiences.</p>
+            <a class="bg-white text-blue-600 hover:bg-gray-200 font-bold py-2 px-4 rounded" href="portfolio.html">View My Work</a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4 text-center text-white">
+        <p>© 2023 [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
